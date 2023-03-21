@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html> 
+
+<h1>CSS SELECTOR</h1>
+<hr>
+<head>
+    <style>
+        h2 {color: orange;}
+        p {color: red;}
+        .mobil {color: blue;}
+        #avanza {color: greenyellow;}
+    </style>
+</head>
+<body>
+    <h2>Halo</h2>
+    <p>Hai</p>
+    <p class="mobil" id="avanza">Ini Avanza</p>
+    <p class="mobil" id="alya">Ini Alya</p>
+</body>
+
+<hr> 
+<h1>ATTRIBUTE SELECTOR</h1>
+<hr>
+
+<head>
+    <style>
+        a[target="_blank"]{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com/">google.com</a>
+    <a href="http://www.wikipedia.org" target="_blank">wikipedia.org</a>
+    <a href="http://www.disney.com" target="_top">disney.com</a>
+</body>
+
+<hr> 
+<h1>ATTRIBUTE SELECTOR (PSEUDO CLASS)</h1>
+<hr>
+
+<head>
+    <style>
+        a:hover{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com/">google.com</a>
+    <a href="http://www.wikipedia.org">wikipedia.org</a>
+    <a href="http://www.disney.com">disney.com</a>
+</body>
+
+<hr>
