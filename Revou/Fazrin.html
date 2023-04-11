@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+    <style>
+        body {
+          background-image: url('https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=600');
+          background-repeat: no-repeat;
+          background-attachment: fixed; 
+          background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="calculator">
+        <h2 style="text-align: center;">Kalkulator BMI</h2>
+        <p style="text-align: justify;">Berat badan ideal adalah impian semua orang.
+            Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat.
+            Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.
+        </p>
+
+        <div class="card">
+            <form id="" name="" class="form">
+                <div class="form-group-jk">
+                    <strong>Jenis Kelamin</strong>
+                    <input type="radio" name="jenis-kelamin" value="l" required>
+                    <label for="jenis-kelamin">Pria</label>
+                    <input type="radio" name="jenis-kelamin" value="p">
+                    <label for="jenis-kelamin">Wanita</label>
+                </div>
+                <div id="form-group">
+                    <label for="berat-badan">Berat Badan (kg)</label>
+                    <div class="icon-input">
+                        <i class="fa-solid fa-pencil"></i>
+                        <input id="berat-badan" type="text" required="true">
+                    </div>
+                </div>
+                <div id="form-group">
+                    <label for="usia">Usia (Tahun)</label>
+                    <div class="icon-input">
+                        <i class="fa-solid fa-pencil"></i>
+                        <input id="usia" type="text" required="true">
+                    </div>
+                </div>
+                <div id="form-group">
+                    <label for="tinggi-badan">Tinggi Badan (cm)</label>
+                    <div class="icon-input">
+                        <i class="fa-solid fa-pencil"></i>
+                        <input id="tinggi-badan" type="text" required="true">
+                    </div>
+                </div>
+                <br>
+                <div class="button-group">
+                    <button id="hitung" type="submit" class="button">Hitung BMI</button>
+                    <button id="reset" class="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+
+        <div
+            class="footer">
+            <p><h3>Keunggulan Fitur</h3></p>
+            <ol type="1">
+                <li>Menghitung berat badan</li>
+                <li>Menentukan kategori berat badan ideal atau tidak</li>
+                <li>Mempersiapkan program penurunan berat badan</li>
+            </ol>
+            <p style="text-align: justify;">Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
+            <p style="text-align: justify;">Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam Kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = kg/m<sup>2</sup></p>
+        </div>
+    </div>
+    <h2 style="text-align: center;">Hasil</h2>
+
+    <div class="result">
+        <script src="index.js"></script>
+        <p style="text-align: center;" id="hasil-perhitungan"></p>
+        <label for="bmi-output" id="bmilabel">Hasil BMI:</label>
+        <input type="text" id="bmi-output" style="text-align: center;">
+    <div style="text-align: center;" id="hasil">
+        <button oneclick="myFuncion ()">
+            Download Hasil BMI
+        </button>
+    </div>
+    </div>
+
+    <div id="calculator">
+        <p style="text-align: justify;">BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda
+        </p>
+    </div>
+
+    <div class="penyakit">
+        <h4 style="text-align: center;">Beberapa penyakit yang berasal dari kegemukan</h4>
+        <p style="text-align: center;">Diabetes</p>
+        <p style="text-align: center;">Hipertensi</p>
+        <p style="text-align: center;">Sakit Jantung</p>
+        <p style="text-align: center;">Osteoarthiris</p>
+        <div style="text-align: center;" class="button-group">
+            <button id="konsultasi" type="submit" class="button">Konsultasi Dokter via Aplikasi</button>
+            <button id="konsultasi" type="submit" class="button">Registrasi Online Sekarang</button>
+        </div>
+    </div>
+
+    <div>
+        <p style="text-align: center;">Download Aplikasi</p>
+        <img src="https://static.spacecrafted.com/dd5b319d20304631b44b4c04a39e9fa5/i/b645364e7fc744838fb15d56a85b236e/1/4SoifmQp45JMgBnHghiDJ/google-play-and-apple-app-store-logos-22.png" width="200" style="margin-left: 42.5vw;" usemap="#image-map"/>
+        <map name="image-map">
+            <area target="_blank" alt="Download on Play Store" title="Download on Play Store" href="https://play.google.com/store/search?q=kalkulator+bmi+-+berat+ideal&amp;c=apps" coords="0,2,136,43" shape="rect">
+            <area target="_blank" alt="Download on App Store" title="Download on App Store" href="https://www.apple.com/us/search/bmi-calculator?src=serp" coords="296,42,149,2" shape="rect">
+        </map>
+    </div>  
+</body>
+</html>
